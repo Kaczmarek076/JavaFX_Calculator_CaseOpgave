@@ -3,6 +3,7 @@ module org.example.javafx_calculator_caseopgave {
     requires javafx.fxml;
 
     requires org.controlsfx.controls;
+    requires java.desktop;
 
     opens org.example.javafx_calculator_caseopgave to javafx.fxml;
     exports org.example.javafx_calculator_caseopgave;
