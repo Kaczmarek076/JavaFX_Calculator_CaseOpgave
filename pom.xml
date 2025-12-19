@@ -65,7 +65,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                org.example.javafx_calculator_caseopgave/org.example.javafx_calculator_caseopgave.HelloApplication
+                                org.example.javafx_calculator_caseopgave/org.example.javafx_calculator_caseopgave.CalculatorApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

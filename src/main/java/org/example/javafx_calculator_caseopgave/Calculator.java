@@ -6,7 +6,7 @@ import javafx.event.ActionEvent;
 
 import javafx.scene.control.TextField;
 
-public class HelloController {
+public class Calculator {
 
     @FXML
     private TextField displayId;
@@ -32,6 +32,12 @@ public class HelloController {
     }
 
 
+
+    @FXML
+    protected void Button1(ActionEvent event) {
+        displayId.clear();
+        displayId.setText("din mor = 80085");
+    }
 
 
     /**
@@ -94,9 +100,13 @@ public class HelloController {
                 number1 = Integer.parseInt(equations.substring(0, i));      //Parsing the first number to an int
                 number2 = Integer.parseInt(equations.substring(i + 1));     //Parsing the secund number to an int
             }
-            sum = number1 + number2;        //Adding the two numbers to find result (sum)
-            displayId.clear();
-            displayId.setText(String.valueOf(sum));     //Setting the result (sum) to the display
+            if (number1 == 2 && number2 == 2) {
+                displayId.setText("din mor");
+            } else {
+                sum = number1 + number2;        //Adding the two numbers to find result (sum)
+                displayId.clear();
+                displayId.setText(String.valueOf(sum));     //Setting the result (sum) to the display
+            }
         }
     }
 
